@@ -48,7 +48,7 @@ header nav ul{
     display: flex;
     gap: 55px;
 }
-header nav ul a{
+header a{
     color: var(--main-color);
 }
 header nav ul li{

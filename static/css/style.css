@@ -1,0 +1,227 @@
+:root{
+    --fs-18: 18px;
+    --fs-20: 20px;
+    --main-color: #00FFF5;
+    --seconday-color: #FFF;
+}
+@font-face {
+    font-family: 'Nunito', sans-serif;
+    src: url(../font/Nunito-Regular.ttf);
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+html { 
+    scroll-behavior: smooth; 
+}
+.container{
+    max-width: 1240px;
+    width: 90%;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+.site-title{
+    font-weight: 800;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #00FFF5;
+}
+.site-btn{
+    font-size: var(--fs-18);
+    color: var(--seconday-color);
+    padding: 12px 30px;
+    background: var(--main-color);
+    border-radius: 30px;
+}
+
+body{
+    background: #061427;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 47px 0;
+}
+header nav ul{
+    display: flex;
+    gap: 55px;
+}
+header nav ul a{
+    color: var(--main-color);
+}
+header nav ul li{
+    display: flex;
+    align-items: center;
+}
+header nav ul li:last-child{
+    margin-left: 200px;
+    border: 1px dashed #0066FF;
+    border-radius: 30px;
+    padding: 15px 37px;
+}
+.about-me{
+    display: flex;
+    align-items: center;
+    gap: 84px;
+    color: var(--main-color);
+    margin-bottom: 150px;
+}
+.profile-img img{
+    border: 1px dashed #0066FF;
+    border-radius: 30px;
+    padding: 25px;
+    transition: 0.5s;
+}
+.profile-img img:hover{
+    padding: 5px;
+    transform: scale(1.2);
+}
+.about-me h4{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.about-me p{
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+.about-me li{
+    margin-top: 25px;
+}
+.work-wrapper{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 70px;
+    margin-bottom: 60px;
+}
+.work-wrapper img{
+    border: 1px dashed #0066FF;
+    border-radius: 30px;
+    padding: 35px;
+    transition: 0.4s;
+}
+.work-img-box{
+    position: relative;
+}
+.work-img-box img:hover{
+    transform: scale(1.2);
+}
+.work-img-box img:hover  +a{
+    opacity: 1;
+}
+.work-proects-hover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.4s;
+}
+.work-proects-hover:hover{
+    opacity: 1;
+}
+
+.work{
+    margin-bottom: 150px;
+}
+.experience{
+    margin-bottom: 100px;
+    color: var(--seconday-color);
+}
+.experience-wrapper,.experience-wrapper-2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.experience-wrapper-2{
+    margin-top: 50px;
+    border: 1px dashed #0066FF;
+    border-radius: 30px;
+    padding: 30px 50px;
+    position: relative;
+}
+.experience-wrapper h3{
+    transform: rotate(-90deg);
+    font-size: var(--fs-20);
+}
+.experience-wrapper-2 h4{
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.experience-wrapper-2 ul{
+    margin-left: 86px;
+    list-style: circle;
+}
+.experience-wrapper-2 li{
+    width: 569px;
+    margin-bottom: 19px;
+}
+.experience-wrapper-2 a{
+    position: absolute;
+    left: 85%;
+    top: 80%;
+    color: #FFFFFF;
+}
+.contact{
+    margin-bottom: 150px;
+}
+.contact h3{
+    font-size: 27px;
+    color: var(--seconday-color);
+    font-weight: 700;
+    margin-top: 52px;
+}
+.contact p{
+    color: var(--seconday-color);
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 24px;
+}
+.contact-wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin: 85px auto 65px auto;
+}
+.contact-info{
+    border: 1px dashed #0066FF;
+    border-radius: 30px;
+    padding: 35px;
+}
+.contact-info ul{
+    display: flex;
+    gap: 40px;
+}
+.contact-info span, .contact-info img{
+    margin-top: 25px;
+}
+.contact-wrapper span{
+    margin-left: 34px;
+    font-size: var(--fs-20);
+    color: var(--seconday-color);
+}
+.scrolltop{
+    position: fixed;
+    left: 95%;
+    top: 90%;
+}
+.recent-work{
+    margin-bottom: 200px;
+}
+.project-wrapper{
+    display: flex;
+    gap: 122px;
+    margin-top: 70px;
+    color: var(--main-color);
+}
+.project-wrapper h6{
+    font-size: var(--fs-20);
+    margin-top: 15px;
+}
+.project-wrapper p{
+    font-size: var(--fs-20);
+    margin-top: 25px;
+    margin-bottom: 150px;
+}
